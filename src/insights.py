@@ -21,7 +21,7 @@ def get_unique_job_types(path):
 
     [unique_job_types.add(job["job_type"]) for job in jobs_list]
 
-    return list(unique_job_types)
+    return unique_job_types
 
 
 def filter_by_job_type(jobs, job_type):
