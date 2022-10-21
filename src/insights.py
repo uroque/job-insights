@@ -17,8 +17,6 @@ def get_unique_job_types(path):
         List of unique job types
     """
 
-    from src.jobs import read
-
     jobs_list = read(path)
     unique_job_types = set()
 
@@ -127,7 +125,7 @@ def get_max_salary(path):
             if int(job["max_salary"]) > max_salary:
                 max_salary = int(job["max_salary"])
         except ValueError:
-    pass
+            pass
 
     return max_salary
 
@@ -156,7 +154,7 @@ def get_min_salary(path):
             if int(job["min_salary"]) < min_salary:
                 min_salary = int(job["min_salary"])
         except ValueError:
-    pass
+            pass
 
     return min_salary
 
